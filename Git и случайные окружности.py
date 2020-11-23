@@ -23,7 +23,7 @@ class MyWidget(QMainWindow):
 
     def draw_flag(self):
         a = randint(5, 450)
-        self.qp.setBrush(QColor('yellow'))
+        self.qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         # Рисуем прямоугольник заданной кистью
         self.qp.drawEllipse(250 - a / 2, 275 - a / 2, a, a)
 
